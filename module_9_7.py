@@ -1,7 +1,7 @@
 def is_prime(func):
     def wrapper(*args):
         result = func(*args)
-        if result <= 1:
+        if result % 2 == 0:
             print('Составное')
         else:
             print('Простое')
